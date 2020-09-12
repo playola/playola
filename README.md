@@ -1,10 +1,9 @@
 <div align="center" dir="col">
   <a href="https://playolaizq.com">
     <img
-      src="public/favicon.png"
+      src="https://drive.google.com/uc?export=view&id=1NJG7KIU7TnB1-yWf0K0qvCkGhYj2Jj6F"
       alt="playola"
       width="200"
-      style={{borderRadius:'50%', marginBottom: '16px'}}
     />
   </a>
   <br />
