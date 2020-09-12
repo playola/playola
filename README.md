@@ -1,6 +1,11 @@
 <div align="center" dir="col">
   <a href="https://playolaizq.com">
-    <img src="public/favicon.jpeg" alt="playola" width="200" />
+    <img
+      src="public/favicon.png"
+      alt="playola"
+      width="200"
+      style={{borderRadius:'50%', marginBottom: '16px'}}
+    />
   </a>
   <br />
   <span>
