@@ -1,7 +1,7 @@
 <div align="center" dir="col">
   <a href="https://playolaizq.com">
     <img
-      src="https://drive.google.com/uc?export=view&id=1NJG7KIU7TnB1-yWf0K0qvCkGhYj2Jj6F"
+      src="https://drive.google.com/uc?export=view&id=1RbnksVqI3gBZqCT7JG4mCmSt1ShDfOZK"
       alt="playola"
       width="200"
     />
