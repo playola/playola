@@ -3,15 +3,16 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 600px;
   min-height: 300px;
-  background-color: #2b2b2b;
+  background-color: ${({ theme }) => theme.darkerGray};
   border-radius: 8px;
   font-family: monospace;
+  margin: 16px 0;
 `;
 
 export const Header = styled.div`
   display: flex;
   align-items: center;
-  background-color: #bbb;
+  background-color: ${({ theme }) => theme.lighterGray};
   border-radius: 8px 8px 0 0;
   padding: 8px 16px;
 `;
@@ -19,7 +20,7 @@ export const Header = styled.div`
 export const FilledCircle = styled.div`
   width: 16px;
   height: 16px;
-  background-color: ${({ color }) => color || 'black'};
+  background-color: ${({ theme, color }) => theme[color] || 'black'};
   border-radius: 50%;
   margin-right: 8px;
 `;
@@ -46,4 +47,8 @@ export const SkillWrapper = styled.div`
 
 export const SkillName = styled.span`
   min-width: 140px;
+`;
+
+export const Actions = styled.div`
+  text-align: right;
 `;

@@ -1,14 +1,24 @@
 import React from 'react';
-import { theme } from '../../common/theme';
+import PropTypes from 'prop-types';
 import Progress from '../progress';
-import { Wrapper, Header, FilledCircle, Title, Content, SkillWrapper, SkillName } from './Terminal.styles';
+import Button from '../button';
+import {
+  Wrapper,
+  Header,
+  FilledCircle,
+  Title,
+  Content,
+  SkillWrapper,
+  SkillName,
+  Actions,
+} from './Terminal.styles';
 
-const Terminal = ({ skills }) => (
+const Terminal = ({ skills, action }) => (
   <Wrapper>
     <Header>
-      <FilledCircle color={theme.error} />
-      <FilledCircle color={theme.warning} />
-      <FilledCircle color={theme.success} />
+      <FilledCircle color="error" />
+      <FilledCircle color="warning" />
+      <FilledCircle color="success" />
       <Title><span role="img" aria-labelledby="Rocket">🚀</span> Skills</Title>
     </Header>
     <Content>
@@ -18,8 +28,24 @@ const Terminal = ({ skills }) => (
           <Progress value={value} />
         </SkillWrapper>
       ))}
+      <Actions>
+        <Button onClick={action}>Work Experience</Button>
+      </Actions>
     </Content>
   </Wrapper>
 );
+
+Terminal.propTypes = {
+  skills: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    name: PropTypes.string,
+    value: PropTypes.number,
+  }).isRequired,
+  action: PropTypes.func,
+};
+
+Terminal.defaultProps = {
+  action: () => {},
+};
 
 export default Terminal;

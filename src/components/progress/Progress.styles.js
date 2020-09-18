@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Item = styled.div`
   width: 10px;
   height: 20px;
-  background-color: gray;
+  background-color: ${({ theme }) => theme.gray};
   border-radius: 2px;
   margin-right: 4px;
 `;
