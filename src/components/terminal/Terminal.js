@@ -28,19 +28,19 @@ const Terminal = ({ skills, action }) => (
           <Progress value={value} />
         </SkillWrapper>
       ))}
-      <Actions>
-        <Button onClick={action}>Work Experience</Button>
-      </Actions>
     </Content>
+    <Actions>
+      <Button onClick={action} color="gray">Work Experience</Button>
+    </Actions>
   </Wrapper>
 );
 
 Terminal.propTypes = {
-  skills: PropTypes.shape({
+  skills: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     name: PropTypes.string,
     value: PropTypes.number,
-  }).isRequired,
+  })).isRequired,
   action: PropTypes.func,
 };
 

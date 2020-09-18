@@ -4,6 +4,7 @@ import Terminal from '../components/terminal';
 import WorkExperience from '../components/work-experience';
 import FlipAnimation from '../components/flip-animation';
 import { skills } from './constants/skills';
+import { jobs } from './constants/jobs';
 import { theme } from './styles/theme';
 
 const Application = () => {
@@ -17,7 +18,7 @@ const Application = () => {
         <Terminal skills={skills} action={doAnimate} />
       </FlipAnimation>
       <FlipAnimation in={animate}>
-        <WorkExperience action={doAnimate} />
+        <WorkExperience jobs={jobs} action={doAnimate} />
       </FlipAnimation>
     </ThemeProvider>
   );

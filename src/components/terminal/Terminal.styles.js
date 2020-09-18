@@ -50,5 +50,8 @@ export const SkillName = styled.span`
 `;
 
 export const Actions = styled.div`
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
   text-align: right;
 `;
